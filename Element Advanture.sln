@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Element Advanture", "Element Advanture.csproj", "{33E9BA09-0815-C168-FF01-353131D46C4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Element Advanture.Plugins", "Element Advanture.Plugins.csproj", "{DB6CFDF4-FA25-2BFB-7033-E805E41918A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33E9BA09-0815-C168-FF01-353131D46C4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33E9BA09-0815-C168-FF01-353131D46C4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33E9BA09-0815-C168-FF01-353131D46C4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33E9BA09-0815-C168-FF01-353131D46C4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB6CFDF4-FA25-2BFB-7033-E805E41918A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB6CFDF4-FA25-2BFB-7033-E805E41918A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB6CFDF4-FA25-2BFB-7033-E805E41918A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB6CFDF4-FA25-2BFB-7033-E805E41918A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

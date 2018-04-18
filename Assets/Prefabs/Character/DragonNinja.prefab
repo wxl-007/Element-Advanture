@@ -53,7 +53,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1166019009942656}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.81, y: -5.6, z: -4.5}
+  m_LocalPosition: {x: -6.81, y: -6.8, z: -4.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4914340414851106}
@@ -67,7 +67,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1322354513512508}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.6, y: 0.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4492481563925628}
@@ -146,6 +146,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ea7798b455f8d47b430230b60ab502, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireBallObj: {fileID: 1118575546473024, guid: f4ed50a5701cf984dbbb39a30476eea3,
+    type: 2}
+  elementList:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!212 &212813758916568090
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -186,5 +194,3 @@ SpriteRenderer:
   m_Size: {x: 10.24, y: 5.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0

@@ -6,10 +6,10 @@ public class PlayerController : MonoBehaviour
 {
 
     enum Elements {
-        Sword,
-        Fire,
-        Water,
+        Fire=1,
         Ground,
+        Sword,
+        Water,
         Eletric,
     }
 
@@ -25,8 +25,10 @@ public class PlayerController : MonoBehaviour
     Animator playerAni;
     SpriteRenderer playerSp;
     public GameObject fireBallObj;
+    public GameObject groundObj;
     Elements curElement;
-
+    public GameObject[] elementList;
+    private int[] unlockedElement =new int[5];
 
     void Start()
     {
@@ -41,6 +43,7 @@ public class PlayerController : MonoBehaviour
         playerAni.SetBool("ATK", atk);
         mouth=transform.Find("Mouth");
         curElement = Elements.Sword;
+        unlockedElement[0] = 3;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -52,9 +55,47 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+
+    void ChangeELement(bool tDir) {
+        //true = left
+        float tMove = 2;
+        if (!tDir) {
+            tMove = -2;
+        }
+
+        for (int i = 0; i < 5; i++)
+        {
+            float x= elementList[i].transform.localPosition.x+tMove;
+            if (x > 0 || x < -8 )
+            {
+                if(x>0)
+                    x = -8;
+                if (x < -8)
+                    x = 0;
+                iTween.ScaleFrom(elementList[i].gameObject, iTween.Hash("scale", Vector3.one * 0.5f, "time", 0.8f, "easetype", iTween.EaseType.easeInOutBounce));
+                iTween.MoveTo(elementList[i].gameObject, iTween.Hash("x", x,"time",0.7f,"easetype", iTween.EaseType.easeInOutCubic,"islocal",true));
+            }
+            else 
+            {
+                iTween.MoveTo(elementList[i].gameObject, iTween.Hash("x", x, "time", 0.7f, "easetype", iTween.EaseType.easeInOutCubic, "islocal",true));
+            }
+        }
+    }
     // Update is called once per frame
     private void Update()
     {
+
+
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            //select element  left dir   
+            ChangeELement(true);
+
+        }
+        else if(Input.GetKeyDown(KeyCode.I)){
+            //select element right dir
+            ChangeELement(false);
+        }
         if (Input.GetKeyDown(KeyCode.J) && grounded == true)
         {
             //atk
@@ -136,7 +177,6 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-
     }
 
     public void SetEventAfterATK() {
@@ -148,8 +188,20 @@ public class PlayerController : MonoBehaviour
         skill = false;
         SetSkill();
     }
+
     void SetSkill() {
-        Instantiate(fireBallObj,mouth.transform.position,transform.rotation);
+        GameObject curObj =null;
+        Vector3 tBornPos = mouth.transform.position;
+        if (curElement == Elements.Fire)
+        {
+            curObj = fireBallObj;
+        }
+        else if (curElement == Elements.Ground)
+        {
+            curObj = groundObj;
+            tBornPos = new Vector3(2,2.5f,-5);
+        }
+        Instantiate(curObj, tBornPos, transform.rotation);
     }
  
 }

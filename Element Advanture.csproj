@@ -85,7 +85,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CarmeraFollow.cs" />
+    <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\FireBall.cs" />
+    <Compile Include="Assets\Scripts\GameController.cs" />
+    <Compile Include="Assets\Scripts\Ground.cs" />
+    <Compile Include="Assets\Scripts\GroundEnemy.cs" />
+    <Compile Include="Assets\Scripts\IceBall.cs" />
+    <Compile Include="Assets\Scripts\Item.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
   </ItemGroup>
   <ItemGroup>

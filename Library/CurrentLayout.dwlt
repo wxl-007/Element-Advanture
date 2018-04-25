@@ -110,7 +110,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 442}
   m_MaxSize: {x: 22012, y: 10021}
   vertical: 0
-  controlID: 13
+  controlID: 95
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -153,8 +153,8 @@ MonoBehaviour:
     y: 0
     width: 888
     height: 530
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -211,7 +211,7 @@ MonoBehaviour:
   m_MinSize: {x: 438, y: 271}
   m_MaxSize: {x: 14008, y: 10021}
   vertical: 0
-  controlID: 54
+  controlID: 96
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -282,10 +282,10 @@ MonoBehaviour:
     y: 0
     width: 555
     height: 947
-  m_MinSize: {x: 277, y: 171}
-  m_MaxSize: {x: 4002, y: 8021}
+  m_MinSize: {x: 277, y: 192}
+  m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 142
+  controlID: 170
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -329,8 +329,8 @@ MonoBehaviour:
     y: 783
     width: 555
     height: 164
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 23}
   m_Panes:
   - {fileID: 23}
@@ -523,14 +523,14 @@ MonoBehaviour:
     width: 886
     height: 509
   m_SceneLighting: 1
-  lastFramingTime: 8397.716953691952
+  lastFramingTime: 2599.5153601499915
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 62.378937, y: -16.180384, z: 0}
+    m_Target: {x: 230.9, y: 1.1000004, z: -5}
     speed: 2
-    m_Value: {x: 62.378937, y: -16.180384, z: 0}
+    m_Value: {x: 230.9, y: 1.1000004, z: -5}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -557,9 +557,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 154.03737
+    m_Target: 40.73462
     speed: 2
-    m_Value: 154.03737
+    m_Value: 40.73462
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -642,23 +642,23 @@ MonoBehaviour:
     height: 926
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
+    m_SelectedIDs: f0280000
     m_LastClickedID: 0
-    m_ExpandedIDs: 3630f9ff76d0fbff46fbffff08fcffff1afcffff00000000242f00003c2f0000642f0000723000007e300000a0300000fa810000f4830000
+    m_ExpandedIDs: 78fbffff1afcffff000000009a310000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Win
-      m_OriginalName: Win
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -540582
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 
@@ -705,7 +705,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Brutal 2D Adventure Mega Pack/Brutal 2D Adventure Jungle Pack/day/platform-blocks
+    - Assets/Dragon Warrior Files/Effects
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
@@ -716,7 +716,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 32260000
     m_LastClickedID: 9778
-    m_ExpandedIDs: 00000000282600002c2600007a260000a62600005027000056270000d62700003e28000056280000862800009e280000a2280000aa280000d828000096290000482a0000822a0000c02a0000c62a0000622b0000e42c0000222d0000aa2d0000c02d0000ec2d0000ee2d0000562e0000e6320000e8320000ea320000ec320000ee320000f0320000f2320000f4320000f6320000f8320000fa320000fc320000
+    m_ExpandedIDs: 00000000282600002c2600007a260000a62600005027000056270000c4270000422800005a2800008a280000a2280000ae280000dc280000e22800004e290000942900009e290000542a00008e2a00009c2a0000cc2a00006e2b0000f02c0000b62d0000cc2d0000f82d0000fa2d0000382e0000622e00000c3400000e34000010340000123400001434000016340000183400001a3400001c3400001e3400002034000022340000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -741,24 +741,24 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 0}
+    scrollPos: {x: 0, y: 80}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000282600002c2600007a260000a62600005027000056270000c02700003e28000056280000862800009e280000aa280000d8280000de280000462900008c29000096290000482a0000822a0000902a0000c02a0000622b0000e42c0000aa2d0000c02d0000ec2d0000ee2d00002c2e0000562e0000e6320000e8320000ea320000ec320000ee320000f0320000f2320000f4320000f6320000f8320000fa320000fc320000
+    m_ExpandedIDs: 00000000282600002c2600007a2600005027000056270000c4270000422800005a2800008a280000a2280000a6280000a8280000ae280000dc280000e22800009e2900003e2a0000542a00008e2a00009c2a0000cc2a00006e2b0000d02c0000f02c0000b62d0000cc2d0000f82d0000fa2d0000382e0000622e0000722e00000c3400000e34000010340000123400001434000016340000183400001a3400001c3400001e3400002034000022340000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: SNinja_crouchdash 2
-      m_OriginalName: SNinja_crouchdash 2
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 10940
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 11}
     m_SearchString: 

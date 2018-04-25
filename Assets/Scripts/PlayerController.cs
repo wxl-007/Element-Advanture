@@ -131,6 +131,7 @@ public class PlayerController : MonoBehaviour
         else if (elementNum == ItemType.HP)
         {
             health += 1;
+            RefreshHP();
         }
 
         RefreshElement();
